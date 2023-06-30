@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovem Místico</title>
+</head>
+
+<body>
+
+    <h1>Descubra o que há no seu signo</h1>
+
+    <input type="text" id="signos">
+
+    <button onclick="escolhaSigno ()">buscar</button>
+
+    <div class="frase"></div>
+
+    <script>
+        function escolhaSigno() {
+            var signo = document.querySelector('#signos').value;
+
+            var texto
+
+            switch (signo) {
+                case "Áries":
+                   
+                texto = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes."
+
+                
+                
+                break;
+
+                    case "Touro":
+                texto = "É um dos mais tranquilos do Zodíaco, e seus nativos em geral são pessoas muito confiáveis e persistentes."
+                imagem = "https://is1-ssl.mzstatic.com/image/thumb/Purple19/v4/f1/4b/0d/f14b0d24-b331-9c1d-94a9-e94e66368df0/source/256x256bb.jpg"
+
+                break;
+
+                case "Gêmeos": 
+                texto = "Alegre, curiosa, comunicativa, desencanada, você adora conhecer pessoas e conversar muito. Sempre conectada, sabe tudo o que está acontecendo e é sempre a garota mais informada da turma."
+
+                // var "Imagem":
+                
+                break;
+
+                case "Câncer":
+                texto = " Câncer traz o afeto, a nutrição, o cuidado, o acolhimento e as lembranças do passado."
+                 
+                break;
+            
+                case "Leão":
+                texto = "São pessoas que se sentem responsáveis pelas pessoas que estão ao seu redor e defende-as como um verdadeiro leão. Os nativos do signo podem agir de maneira explosiva e impulsiva, mas sabem perdoar e dificilmente guardam rancor."
+
+                break;
+
+                case "Virgem":
+                texto = "As pessoas do signo de Virgem costumam ser inteligentes, detalhistas, metódicas, organizadas, discretas e perfeccionistas. Trabalham para ter segurança e estabilidade financeira. Como são regidas por Mercúrio, estão sempre em busca de conhecimento."
+                break;
+
+                case "Libra": 
+                texto = "O signo de Libra traz consigo a ideia de equilíbrio, de medida e de neutralização de forças contrárias. Gentileza e conciliação são os dons desse signo, e, por isso, se esforça muito para manter a paz."
+                break;
+
+                case "Escorpião":
+                    texto = "Escorpião é um dos signos mais incompreendidos e temidos do zodíaco. Reservados e profundos, os escorpianos têm a intensidade como característica marcante. São pessoas que exalam mistério e poder, e dificilmente deixam-se acessar por completo."
+                    break;
+
+                    case "Sagitário":
+                        texto = "O signo de Sagitário é considerado o mais positivo e otimista. Sagitário faz parte do elemento Fogo e é regido por Júpiter, ou seja, isso significa que o signo foi presenteado com forte instinto de aventura. Além disso, Sagitário é um dos signos mais divertidos."
+                        break;
+
+                    case "Capricórnio":
+                        texto = "Capricórnio é o décimo signo do zodíaco, pertence ao elemento Terra e é regido por Saturno, por isso, os capricornianos são pessoas muito coerentes, disciplinadas, sérias e responsáveis."
+                        break;
+
+                    case "Aquário":
+                        texto = "Aquário é o melhor amigo do Zodíaco. Ou seja, é um signo leal, honrado e que se pode realmente confiar. Aquário é considerado o signo do que é imprevisível e das atitudes desconcertantes em relação às expectativas das outras pessoas."
+                        break;
+
+                    case "Peixes":
+                        texto = "Peixes é um signo altamente sensível e empático, o que significa que os piscianos geralmente são capazes de compreender os sentimentos e as necessidades dos outros com facilidade."
+                        break;
+
+                default:
+                texto = "insira um signo válido."
+                
+            }
+
+            document.querySelector('.frase').innerHTML = texto
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
